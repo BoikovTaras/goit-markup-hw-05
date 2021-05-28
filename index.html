@@ -21,7 +21,7 @@
                     <a href="./index.html" class="logo link list"><span class="logo-akcent">Web</span>Studio</a>
                     <ul class="main-header-list">
                         <li class="main-conteiner-list list">
-                            <a class="main-header-items link" href="./index.html">Студия</a>
+                            <a class="main-header-items current link " href="./index.html">Студия</a>
                         </li>
                         <li class="main-conteiner-list list">
                             <a class="main-header-items link" href="./portfolio.html">Портфолио</a>
@@ -56,7 +56,7 @@
             <section class="baner">
                 <div class="container main-conteiner-hero">
                     <h1 class="hero">Эффективные решения <br> для вашего бизнеса</h1>
-                    <button type="button" class="hero-button">Заказать услугу</button>
+                    <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
             <!-- Блок особенностей -->
@@ -113,19 +113,29 @@
                     <h2 class="presintation-title">Чем мы занимаемся</h2>
                     <ul class="presintation-list-container">
                         <li class="list presentation-item">
-                            <a href="">
-                                <img src="./images/box-1.png" alt="Создание макета" width="370" height="294">
-                            </a>
+                            <div class="presentation-box">
+                                <a class="presintation-link" href="">
+                                    <img src="./images/box-1.png" alt="Создание макета" width="370" height="294">
+                                    <p class="presintation-paragraf">Десктопные приложения</p>
+                                </a>
+                            </div>
                         </li>
                         <li class="list presentation-item">
-                            <a href="">
-                                <img src="./images/box-2.png" alt="Оптимизвция" width="370" height="294">
-                            </a>
+                            <div class="presentation-box">
+                                <a class="presintation-link" href="">
+                                    <img src="./images/box-2.png" alt="Оптимизвция" width="370" height="294">
+                                    <p class="presintation-paragraf">Мобильные приложения</p>
+                                </a>
+                            </div>
                         </li>
                         <li class="list presentation-item">
-                            <a href="">
-                                <img src="./images/box-3.png" alt="Дизайн" width="370" height="294">
-                            </a>
+                            <div class="presentation-box">
+                                <a class="presintation-link" href="">
+                                    <img src="./images/box-3.png" alt="Дизайн" width="370" height="294">
+                                    <p class="presintation-paragraf">Дизайнерские решения</p>
+                                </a>
+                            </div>
+                            
                         </li>
                     </ul>
                     
@@ -388,5 +398,16 @@
                 </div>
             </div>
         </footer>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="backdrop-button" type="button" data-modal-close>
+                    <svg class="backdrop-button-icon">
+                        <use href="./images/svg/sprite.svg#icon-close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
